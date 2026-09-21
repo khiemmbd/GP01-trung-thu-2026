@@ -2873,11 +2873,11 @@ tbody#lich-su-nhan-code tr td:nth-child(2) {
     left: 50%;
     bottom: 2%;
     transform: translateX(-50%);
-    width: 88%;
+    width: 32%;
     height: 24%;
-    background: radial-gradient(closest-side, #4a2c12 0%, #33200e 55%, #1f1206 100%);
+    background: radial-gradient(closest-side, #000 0%, #000 55%, #000 100%);
     border-radius: 50%;
-    box-shadow: inset 0 0.4vw 0.8vw rgb(0 0 0 / 60%);
+    box-shadow: inset 0 0.4vw 0.8vw rgb(0 0 0 / 100%);
     z-index: 2;
 }
 
@@ -3041,14 +3041,14 @@ tbody#lich-su-nhan-code tr td:nth-child(2) {
 
 @media (max-width: 767px) {
     .tab3 .main-content {
-        top: 33%;
-        bottom: 17%;
-        width: 86%;
+        top: 38%;
+        width: 98%;
         gap: 2vw;
+        height: 72%;
     }
 
     .tab3 .main-content .game-board {
-        column-gap: 3vw;
+        column-gap: 1vw;
         row-gap: 2vw;
     }
 
@@ -3066,5 +3066,21 @@ tbody#lich-su-nhan-code tr td:nth-child(2) {
 
     .tab3 .main-content .game-board .cell .float-point {
         font-size: 3.8vw;
+    }
+
+    .tab3 .main-content .game-board .cell.cell-1 {
+        margin-left: 6.6vw;
+    }
+
+    .tab3 .main-content .game-board .cell.cell-3 {
+        margin-right: 4.6vw;
+    }
+
+    .tab3 .main-content .game-board .cell.cell-7 {
+        margin-left: -6vw;
+    }
+
+    .tab3 .main-content .game-board .cell.cell-9 {
+        margin-right: -6vw;
     }
 }
