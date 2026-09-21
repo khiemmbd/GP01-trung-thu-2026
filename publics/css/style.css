@@ -1150,14 +1150,22 @@ header #menu_mobile a span {
     left: 36%
 }
 
-.tab2 .btn-doi-qua {
+.tab2 .list-btn_action {
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
-    top: 51%;
-    width: 9%;
+    top: 52%;
+    width: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
 }
 
+.tab2 .list-btn_action .btn {
+    width: 100%;
+}
 
 @media(max-width: 767px) {
     .tab2 {
@@ -1169,9 +1177,12 @@ header #menu_mobile a span {
         width: 70%;
     }
 
-    .tab2 .btn-doi-qua {
-        top: 6.4%;
-        width: 24%;
+    .tab2 .list-btn_action {
+        top: 6.6%;
+        width: 46%;
+        display: flex;
+        flex-direction: unset;
+        gap: 3vw;
     }
 
     .tab2 .main-content {
@@ -1374,7 +1385,7 @@ header #menu_mobile a span {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     column-gap: 1vw;
-    row-gap: 3vw;
+    row-gap: 2vw;
     width: 70.4%;
 }
 
@@ -1409,6 +1420,7 @@ header #menu_mobile a span {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .tab4 .main-content .list-item .item .item-detail .item-detail_top .item-remain {
@@ -1422,6 +1434,10 @@ header #menu_mobile a span {
 .tab4 .main-content .list-item .item .item-detail .item-detail_top .item-remain .item-remain-thunder {
     position: relative;
     z-index: 1;
+}
+
+.tab4 .main-content .list-item .item .item-detail .item-detail_top .item-remain .item-remain-thunder img {
+    display: block;
 }
 
 .tab4 .main-content .list-item .item .item-detail .item-detail_top .item-remain .item-remain-bg {
@@ -1519,6 +1535,10 @@ header #menu_mobile a span {
     animation: dotPulseRed 0.75s infinite;
 }
 
+.tab4 .main-content .list-item .item .item-detail .item-detail_bot .btn img {
+    display: block;
+}
+
 @media(max-width: 767px) {
     .tab4 {
         /* padding-bottom: 9%; */
@@ -1558,7 +1578,7 @@ header #menu_mobile a span {
     }
 
     .tab4 .main-content .list-item .item .item-detail .item-detail_top .item-remain .item-remain-bg p.item-remain-text {
-        font-size: 1.7vw;
+        font-size: 1.8vw;
     }
 
     .tab4 .main-content .list-item .item .item-detail .item-detail_top .item-remain .item-remain-bg .item-remain-nav {
