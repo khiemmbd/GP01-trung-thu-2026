@@ -1285,14 +1285,31 @@ header #menu_mobile a span {
         -1px 1px #000;
 }
 
-
-
 .tab3 .btn-start {
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
-    bottom: 4%;
+    bottom: 0%;
     width: 12%;
+}
+
+.tab3 p#count_play {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: 7%;
+    width: 12%;
+    color: #FFAE00;
+    font-size: 1.2vw;
+    text-transform: capitalize;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+    text-shadow:
+        1px 1px #000,
+        -1px -1px #000,
+        1px -1px #000,
+        -1px 1px #000;
 }
 
 @media (max-width: 767px) {
@@ -1315,8 +1332,13 @@ header #menu_mobile a span {
     }
 
     .tab3 .btn-start {
-        bottom: 10%;
+        bottom: 8%;
         width: 35%;
+    }
+
+    .tab3 p#count_play {
+        bottom: 16%;
+        font-size: 3.2vw;
     }
 }
 
@@ -1539,6 +1561,14 @@ header #menu_mobile a span {
 
 .tab4 .main-content .list-item .item .item-detail .item-detail_bot .btn img {
     display: block;
+}
+
+.tab4 .main-content .list-item .item .item-detail .item-detail_bot .btn:first-child {
+    display: none;
+}
+
+.tab4 .main-content .list-item .item .item-detail .item-detail_bot.first-el {
+    width: 36%;
 }
 
 @media(max-width: 767px) {
@@ -2603,7 +2633,7 @@ tbody#lich-su-nhan-code tr td:nth-child(2) {
     grid-template-columns: repeat(4, minmax(0, 1fr));
     place-items: center;
     column-gap: 1.4vw;
-    row-gap: 0.4vw;
+    row-gap: 0.6vw;
 }
 
 #popup-doi-qua-1 .main-content .bot img {
@@ -2663,11 +2693,11 @@ tbody#lich-su-nhan-code tr td:nth-child(2) {
     width: 84%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 #popup-doi-qua-1 .content-popup .bot .item .btn p {
     position: absolute;
-    left: 10%;
     font-size: 0.8vw;
     color: #fff;
     width: 62%;
@@ -3009,29 +3039,6 @@ tbody#lich-su-nhan-code tr td:nth-child(2) {
     border-radius: 0.2vw;
 }
 
-/* ĐIỂM +1 BAY LÊN */
-.tab3 .main-content .game-board .cell .float-point {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
-    color: #FFAE00;
-    font-weight: bold;
-    font-size: 1.5vw;
-    text-shadow:
-        1px 1px #000,
-        -1px -1px #000,
-        1px -1px #000,
-        -1px 1px #000;
-    opacity: 0;
-    z-index: 3;
-    pointer-events: none;
-}
-
-.tab3 .main-content .game-board .cell .float-point.show {
-    animation: floatPoint 0.6s ease-out;
-}
-
 /* NÚT START KHI ĐANG CHƠI */
 .tab3 .btn-start.playing {
     pointer-events: none;
@@ -3062,10 +3069,6 @@ tbody#lich-su-nhan-code tr td:nth-child(2) {
 
     .tab3 .main-content .game-board .cell .rabbit.hit .eye {
         border-radius: 0.6vw;
-    }
-
-    .tab3 .main-content .game-board .cell .float-point {
-        font-size: 3.8vw;
     }
 
     .tab3 .main-content .game-board .cell.cell-1 {

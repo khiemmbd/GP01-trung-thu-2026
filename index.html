@@ -425,7 +425,7 @@
           </div>
 
           <div class="list-btn_action">
-            <div class="btn">
+            <div onclick="openPopup('popup-doi-qua-2')" class="btn">
               <img src="publics/images/tab2/btn-doi.webp" class="default" />
               <img
                 src="publics/images/tab2/btn-doi-active.webp"
@@ -454,14 +454,14 @@
           </div>
 
           <div class="list-btn">
-            <div class="btn">
+            <div onclick="openPopup('popup-the-le')" class="btn">
               <img src="publics/images/tab3/btn-the-le.webp" class="default" />
               <img
                 src="publics/images/tab3/btn-the-le-active.webp"
                 class="active"
               />
             </div>
-            <div class="btn">
+            <div onclick="openPopup('popup-nhiem-vu')" class="btn">
               <img src="publics/images/tab3/btn-nhan.webp" class="default" />
               <img
                 src="publics/images/tab3/btn-nhan-active.webp"
@@ -469,7 +469,7 @@
               />
             </div>
 
-            <div class="btn">
+            <div onclick="openPopup('popup-doi-qua-1')" class="btn">
               <img src="publics/images/tab2/btn-doi.webp" class="default" />
               <img
                 src="publics/images/tab2/btn-doi-active.webp"
@@ -501,7 +501,6 @@
                 </div>
 
                 <div class="hole"></div>
-                <p class="float-point">+1</p>
               </div>
 
               <div class="cell cell-2">
@@ -520,7 +519,6 @@
                 </div>
 
                 <div class="hole"></div>
-                <p class="float-point">+1</p>
               </div>
 
               <div class="cell cell-3">
@@ -539,7 +537,6 @@
                 </div>
 
                 <div class="hole"></div>
-                <p class="float-point">+1</p>
               </div>
 
               <div class="cell cell-4">
@@ -558,7 +555,6 @@
                 </div>
 
                 <div class="hole"></div>
-                <p class="float-point">+1</p>
               </div>
 
               <div class="cell cell-5">
@@ -577,7 +573,6 @@
                 </div>
 
                 <div class="hole"></div>
-                <p class="float-point">+1</p>
               </div>
 
               <div class="cell cell-6">
@@ -596,7 +591,6 @@
                 </div>
 
                 <div class="hole"></div>
-                <p class="float-point">+1</p>
               </div>
 
               <div class="cell cell-7">
@@ -615,7 +609,6 @@
                 </div>
 
                 <div class="hole"></div>
-                <p class="float-point">+1</p>
               </div>
 
               <div class="cell cell-8">
@@ -634,7 +627,6 @@
                 </div>
 
                 <div class="hole"></div>
-                <p class="float-point">+1</p>
               </div>
 
               <div class="cell cell-9">
@@ -653,7 +645,6 @@
                 </div>
 
                 <div class="hole"></div>
-                <p class="float-point">+1</p>
               </div>
             </div>
           </div>
@@ -665,6 +656,8 @@
               class="active"
             />
           </div>
+
+          <p id="count_play">Lượt Đập Thỏ Đang Có: <span>0</span></p>
         </section>
 
         <section class="tab4">
@@ -744,7 +737,7 @@
                     </div>
                   </div>
 
-                  <div class="item-detail_bot">
+                  <div class="item-detail_bot first-el">
                     <div class="btn">
                       <img src="publics/images/tab4/btn-see.webp" />
                     </div>
@@ -799,7 +792,7 @@
                     </div>
                   </div>
 
-                  <div class="item-detail_bot">
+                  <div class="item-detail_bot first-el">
                     <div class="btn">
                       <img src="publics/images/tab4/btn-see.webp" />
                     </div>
@@ -854,7 +847,7 @@
                     </div>
                   </div>
 
-                  <div class="item-detail_bot">
+                  <div class="item-detail_bot first-el">
                     <div class="btn">
                       <img src="publics/images/tab4/btn-see.webp" />
                     </div>
@@ -909,7 +902,7 @@
                     </div>
                   </div>
 
-                  <div class="item-detail_bot">
+                  <div class="item-detail_bot first-el">
                     <div class="btn">
                       <img src="publics/images/tab4/btn-see.webp" />
                     </div>
@@ -964,7 +957,7 @@
                     </div>
                   </div>
 
-                  <div class="item-detail_bot">
+                  <div class="item-detail_bot first-el">
                     <div class="btn">
                       <img src="publics/images/tab4/btn-see.webp" />
                     </div>
@@ -1019,7 +1012,7 @@
                     </div>
                   </div>
 
-                  <div class="item-detail_bot">
+                  <div class="item-detail_bot first-el">
                     <div class="btn">
                       <img src="publics/images/tab4/btn-see.webp" />
                     </div>
@@ -1074,7 +1067,7 @@
                     </div>
                   </div>
 
-                  <div class="item-detail_bot">
+                  <div class="item-detail_bot first-el">
                     <div class="btn">
                       <img src="publics/images/tab4/btn-see.webp" />
                     </div>
@@ -1129,7 +1122,7 @@
                     </div>
                   </div>
 
-                  <div class="item-detail_bot">
+                  <div class="item-detail_bot first-el">
                     <div class="btn">
                       <img src="publics/images/tab4/btn-see.webp" />
                     </div>
@@ -1475,14 +1468,14 @@
               </div>
               <div class="content-popup">
                 <div class="item-mission">
-                  <p>Đăng nhập hàng ngày: +1 lượt mỗi ngày</p>
+                  <p>Đăng nhập hàng ngày: +1 lượt chơi đập thỏ mỗi ngày</p>
                   <div class="btn-brightness">
                     <img src="publics/images/popup/btn-nhan-luot.webp" />
                   </div>
                 </div>
 
                 <div class="item-mission">
-                  <p>Chia sẻ landing: +1 lượt mỗi ngày</p>
+                  <p>Chia sẻ landing: +1 lượt chơi đập thỏ mỗi ngày</p>
                   <div class="btn-brightness">
                     <img src="publics/images/popup/btn-nhan-luot.webp" />
                   </div>
@@ -2242,45 +2235,69 @@
   </script>
 
   <script>
-    // MINIGAME ĐẬP THỎ - TAB 3
     const RABBIT_GAME_TIME = 30;
-    const RABBIT_TOTAL = 9;
+    const RABBIT_SPAWN_START = 1500; // Thỏ xuất hiện cách nhau ~2.8s lúc đầu
+    const RABBIT_SPAWN_END = 400; // Chỉ còn ~0.7s lúc cuối -> càng chơi càng nhanh
+    const RABBIT_UP_START = 800; // Thỏ ở lại lâu lúc đầu
+    const RABBIT_UP_END = 600; // Nấp xuống nhanh dần lúc cuối
 
     let rabbitScore = 0;
+    let rabbitSpawned = 0;
     let rabbitPlaying = false;
+    let rabbitElapsed = 0;
+    let rabbitCountdown = null;
+    let rabbitSpawnTimer = null;
+    let rabbitTimers = [];
+
+    function addRabbitTimer(fn, delay) {
+      const id = setTimeout(fn, delay);
+      rabbitTimers.push(id);
+    }
 
     function startRabbitGame() {
       if (rabbitPlaying) return;
       rabbitPlaying = true;
       rabbitScore = 0;
+      rabbitSpawned = 0;
+      rabbitElapsed = 0;
       $(".tab3 .btn-start").addClass("playing");
 
       $(".game-board .rabbit").removeClass("up hit");
-      $(".game-board .float-point").removeClass("show");
 
       // Đếm ngược 30 giây
       let timeLeft = RABBIT_GAME_TIME;
       $(".tab3 .frame-countdown .text-2").text(timeLeft);
 
-      const countdown = setInterval(() => {
+      rabbitCountdown = setInterval(() => {
         timeLeft--;
         $(".tab3 .frame-countdown .text-2").text(timeLeft);
 
         if (timeLeft <= 0) {
-          clearInterval(countdown);
+          clearInterval(rabbitCountdown);
         }
       }, 1000);
 
-      // 9 con thỏ lần lượt xuất hiện ngẫu nhiên trong 30 giây
-      const baseGap = RABBIT_GAME_TIME / RABBIT_TOTAL;
+      // Thỏ xuất hiện lúc đầu chậm, sau đó nhanh dần
+      nextRabbitSpawn();
 
-      for (let i = 0; i < RABBIT_TOTAL; i++) {
-        const delay = (i * baseGap + Math.random() * baseGap * 0.5) * 1000;
+      addRabbitTimer(endRabbitGame, RABBIT_GAME_TIME * 1000);
+    }
 
-        setTimeout(spawnRabbit, delay);
-      }
+    function nextRabbitSpawn() {
+      if (!rabbitPlaying) return;
 
-      setTimeout(endRabbitGame, RABBIT_GAME_TIME * 1000);
+      const totalTime = RABBIT_GAME_TIME * 1000;
+      const progress = Math.min(rabbitElapsed / totalTime, 1);
+
+      // Khoảng cách giữa 2 lần xuất hiện giảm dần theo tiến độ game
+      const gap =
+        RABBIT_SPAWN_START - (RABBIT_SPAWN_START - RABBIT_SPAWN_END) * progress;
+
+      rabbitSpawnTimer = setTimeout(() => {
+        rabbitElapsed += gap;
+        spawnRabbit();
+        nextRabbitSpawn();
+      }, gap);
     }
 
     function spawnRabbit() {
@@ -2297,9 +2314,15 @@
 
       const rabbit = $(cell).find(".rabbit");
       rabbit.removeClass("hit").addClass("up");
+      rabbitSpawned++;
 
-      // Thỏ tự nấp xuống sau 1.2s - 1.8s
-      setTimeout(() => rabbit.removeClass("up"), 1200 + Math.random() * 600);
+      // Càng về cuối thỏ nấp xuống càng nhanh
+      const totalTime = RABBIT_GAME_TIME * 1000;
+      const progress = Math.min(rabbitElapsed / totalTime, 1);
+      const upTime =
+        RABBIT_UP_START - (RABBIT_UP_START - RABBIT_UP_END) * progress;
+
+      addRabbitTimer(() => rabbit.removeClass("up"), upTime);
     }
 
     function whackRabbit(element) {
@@ -2312,23 +2335,23 @@
       rabbit.addClass("hit");
       rabbitScore++;
 
-      const point = rabbit.closest(".cell").find(".float-point");
-      point.removeClass("show");
-      void point[0].offsetWidth; // Reset animation
-      point.addClass("show");
-
-      setTimeout(() => rabbit.removeClass("up hit"), 350);
+      addRabbitTimer(() => rabbit.removeClass("up hit"), 350);
     }
 
     function endRabbitGame() {
       rabbitPlaying = false;
+      clearInterval(rabbitCountdown);
+      clearTimeout(rabbitSpawnTimer);
+      rabbitTimers.forEach((id) => clearTimeout(id));
+      rabbitTimers = [];
+
       $(".game-board .rabbit").removeClass("up");
       $(".tab3 .btn-start").removeClass("playing");
       $(".tab3 .frame-countdown .text-2").text(RABBIT_GAME_TIME);
 
       openPopup(
         "popup-thong-bao",
-        `Hết Giờ! Bạn Đã Đập Trúng <strong>${rabbitScore}/${RABBIT_TOTAL}</strong> Con Thỏ<br/>Tổng Điểm: <strong>${rabbitScore}</strong>`,
+        `Hết Giờ! Bạn Đã Đập Trúng <strong>${rabbitScore}/${rabbitSpawned}</strong> Con Thỏ`,
       );
     }
   </script>
