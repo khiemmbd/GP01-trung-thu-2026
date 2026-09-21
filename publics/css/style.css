@@ -817,7 +817,7 @@ header #menu_mobile a span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.4vw;
+    gap: 1.8vw;
 }
 
 .tab1 .list-item_daily .list-item_daily-content .left-content p.title {
@@ -839,7 +839,7 @@ header #menu_mobile a span {
     width: 100%;
     margin-inline: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     gap: 1vw;
 }
@@ -948,7 +948,7 @@ header #menu_mobile a span {
         flex-direction: column;
         justify-content: unset;
         top: 4%;
-        gap: 3vw;
+        gap: 2.4vw;
     }
 
     .tab1 .list-item_daily .list-item_daily-content .left-content {
@@ -957,7 +957,8 @@ header #menu_mobile a span {
     }
 
     .tab1 .list-item_daily .list-item_daily-content .right-content {
-        width: 100%
+        width: 100%;
+        gap: 5.8vw;
     }
 
     .tab1 .list-item_daily .list-item_daily-content .left-content p.title {
